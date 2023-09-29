@@ -1,4 +1,5 @@
-const { resolve } = require("node:path");
+import { resolve } from ("node:path");
+
 
 const project = resolve(process.cwd(), "tsconfig.json");
 
@@ -35,5 +36,6 @@ module.exports = {
 
   rules: {
     // add specific rules configurations here
+    "import/no-default-export": "off"
   },
 };
