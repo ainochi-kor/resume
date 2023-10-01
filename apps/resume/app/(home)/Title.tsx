@@ -3,11 +3,7 @@ import { Typography } from "@/components/Typography";
 import dayjs from "dayjs";
 import React from "react";
 
-interface TitleProps {
-  data: string;
-}
-
-const Title: React.FC<TitleProps> = () => {
+const Title: React.FC = () => {
   const date = dayjs().format("YYYY.MM.DD hh:mm:ss");
   return (
     <BorderBox>
