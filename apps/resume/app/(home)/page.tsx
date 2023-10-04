@@ -3,6 +3,7 @@ import Title from "./Title";
 import TOC from "./TOC";
 import Greeting from "./Greeting";
 import Profile from "./Profile";
+import Inroduce from "./Inroduce";
 
 const HomePage: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage: NextPage = () => {
       <TOC />
       <Greeting />
       <Profile />
+      <Inroduce />
     </main>
   );
 };
