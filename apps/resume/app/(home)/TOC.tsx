@@ -1,8 +1,14 @@
 import BorderBox from "@/components/BorderBox";
 import { Typography } from "@/components/Typography";
-import React from "react";
+import React, { useState } from "react";
 
 const TOC: React.FC = () => {
+  const isShow = false;
+
+  if (!isShow) {
+    return null;
+  }
+
   return (
     <BorderBox className="py-2">
       <Typography as="p" className="text-xs">

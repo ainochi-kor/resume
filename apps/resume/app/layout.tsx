@@ -15,12 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body>
-        <Header />
-        <div className="pt-1 px-1">
-          <div className={`${HEADER_HEIGHT}`}></div>
+      <body className="grid place-items-center">
+        <div className="max-w-3xl w-full">
+          <Header />
+          <div className="pt-1 px-1">
+            <div className={`${HEADER_HEIGHT}`}></div>
+          </div>
+          <section className="p-1">{children}</section>
         </div>
-        <section className="p-1">{children}</section>
       </body>
     </html>
   );
